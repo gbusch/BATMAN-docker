@@ -1,0 +1,6 @@
+echo "Is the container already running? If yes, I will stop it now..."
+./stop
+#docker run --name batman -p 8888:8888 -v $(pwd):/home/jovyan/work -d buschg/batman:v1
+docker run --name batman -p 8888:8888 -v ~:/home/jovyan/work -d buschg/batman:v1
+sleep 2s
+open http://localhost:8888
