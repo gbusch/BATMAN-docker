@@ -1,1 +1,1 @@
-docker build -t batman:v1 . && 
+docker build -t batman:training0 . && 
